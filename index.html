@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript">
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if(clientWidth>=750){
+						docEl.style.fontSize = '100px';
+					}else{
+						docEl.style.fontSize = 100 * (clientWidth / 750)+ 'px';
+					}
+				};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	</head>
+	<body>
+		<div class="loading-page">
+			<img class="logo" src="img/page0/logo.png" alt="" />
+			<div class="percent">
+				<div class="percent-num">60%</div>
+				<div class="icon-percent"></div>
+			</div>
+		</div>
+		<div class="icon-music-container" id="music-stop">
+			<div class="inner">
+				<i></i>
+				<img class="icon-music" width="100%" src="img/music.png" alt="" />
+			</div>
+		</div>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+	      		<div class="swiper-slide page-1">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img swiper-animate-effect="zoomInLeft" swiper-animate-delay="1s" class="ani title-1" src="img/page1/title-1.png" alt="" />
+		      		<div class="min-container">
+		      			<div swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="2s" class="ani earth-container">
+		      				<img class="earth" src="img/page1/earth.png" alt="" />
+		      				<img swiper-animate-effect="r-earth" class="r-earth ani" src="img/page1/cs.png" alt="" />
+		      			</div>
+		      			<ul class="text-list">
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3s" class="ani"><img src="img/page1/line-1.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.1s" class="ani"><img src="img/page1/line-2.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.2s" class="ani"><img src="img/page1/line-3.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.3s" class="ani"><img src="img/page1/line-4.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.4s" class="ani"><img src="img/page1/line-5.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.5s" class="ani"><img src="img/page1/line-6.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.6s" class="ani"><img src="img/page1/line-7.png" alt="" /></li>
+		      				<li swiper-animate-effect="slideInUp" swiper-animate-delay="3.7s" class="ani"><img src="img/page1/line-8.png" alt="" /></li>
+		      				<li><img swiper-animate-effect="bounceIn" swiper-animate-delay="4.8s" class="ani sq-img" src="img/page1/line-9.png" alt="" /></li>
+		      			</ul>
+		      		</div>
+		      		<img class="kh" swiper-animate-effect="slideInUp" swiper-animate-delay="1.6s" src="img/page1/kh.png" alt="" />
+		      		<img class="dpx" src="img/page2/xg.png" alt="" />
+		      	</div>  
+		      	<div class="swiper-slide page-2">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<div class="list-container">
+		      			<ul class="date-list">
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.1s" src="img/page2/date-1.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="2.6s" src="img/page2/sj-1.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.1s" src="img/page2/date-2.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="3.6s" src="img/page2/sj-2.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="4.1s" src="img/page2/date-3.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="4.6s" src="img/page2/sj-3.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="5.1s" src="img/page2/date-4.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="5.6s" src="img/page2/sj-4.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="6.1s" src="img/page2/date-5.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="6.6s" src="img/page2/sj-5.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="7.1s" src="img/page2/date-6.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="7.6s" src="img/page2/sj-6.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="8.1s" src="img/page2/date-7.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="8.6s" src="img/page2/sj-7.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="9.1s" src="img/page2/date-8.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="9.6s" src="img/page2/sj-8.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="10.1s" src="img/page2/date-9.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="10.6s" src="img/page2/sj-9.png" alt="" />
+		      				</li>
+		      				<li>
+		      					<img class="ani icon-date" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="11.1s" src="img/page2/date-10.png" alt="" />
+		      					<img class="ani icon-sj" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="11.6s" src="img/page2/sj-10.png" alt="" />
+		      				</li>
+		      			</ul>
+		      			<div class="sz-container">
+		      				<div class="inner">
+		      					<img class="ani sx" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1.26s" src="img/page2/time-z.png" alt="" />
+		      					<ul class="xx-container">
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="4.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="5.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="6.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="7.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="8.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="9.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      						<li class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="10.8s"><img src="img/page2/icon-xx.png" alt="" /></li>
+		      					</ul>
+		      				</div>
+		      			</div>
+		      		</div>
+		      		<img class="ani b-context" swiper-animate-effect="bounceInUp" swiper-animate-delay="12s" src="img/page2/b-context.png" alt="" />
+		      		<img class="kh" swiper-animate-effect="slideInUp" swiper-animate-delay="1.6s" src="img/page2/kh.png" alt="" />
+		      		<img class="dpx" src="img/page2/xg.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-3">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img swiper-animate-effect="zoomInLeft" swiper-animate-delay=".3s" class="ani title-1" src="img/page1/title-1.png" alt="" />
+		      		<div class="list-container">
+		      			<img class="ani line" swiper-animate-effect="line-date" src="img/page3/line.png" />
+		      			<div class="xx-list">
+		      				<img class="ani xx" swiper-animate-effect="fadeIn" swiper-animate-duration=".7s" swiper-animate-delay="4.5s" src="img/page3/xx.png" alt="" />
+		      				<img class="ani xx" swiper-animate-effect="fadeIn" swiper-animate-duration=".7s" swiper-animate-delay="3.8s" src="img/page3/xx.png" alt="" />
+		      				<img class="ani xx" swiper-animate-effect="fadeIn" swiper-animate-duration=".7s" swiper-animate-delay="3.1s" src="img/page3/xx.png" alt="" />
+		      				<img class="ani xx" swiper-animate-effect="fadeIn" swiper-animate-duration=".7s" swiper-animate-delay="2.4s" src="img/page3/xx.png" alt="" />
+		      				<img class="ani xx" swiper-animate-effect="fadeIn" swiper-animate-duration=".7s" swiper-animate-delay="1.7s" src="img/page3/xx.png" alt="" />
+		      			</div>
+		      			<div class="text-list">
+		      				<img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration=".7s" swiper-animate-delay="4.6s" src="img/page3/text-5.png" alt="" />
+		      				<img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration=".7s" swiper-animate-delay="3.9s" src="img/page3/text-4.png" alt="" />
+		      				<img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration=".7s" swiper-animate-delay="3.2s" src="img/page3/text-3.png" alt="" />
+		      				<img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration=".7s" swiper-animate-delay="2.5s" src="img/page3/text-2.png" alt="" />
+		      				<img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration=".7s" swiper-animate-delay="1.8s" src="img/page3/text-1.png" alt="" />
+		      			</div>
+		      		</div>
+		      		<img class="kh" swiper-animate-effect="slideInUp" swiper-animate-delay="1.6s" src="img/page2/kh.png" alt="" />
+		      		<img class="dpx" src="img/page2/xg.png" alt="" />
+		      	</div>
+		    	<div class="swiper-slide page-4">
+		    		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img swiper-animate-effect="zoomInLeft" swiper-animate-delay=".1s" class="ani title-1" src="img/page1/title-1.png" alt="" />
+		      		<img class="ani text-img text-1" swiper-animate-effect="fadeInUp" swiper-animate-delay=".3s" src="img/page4/text-1.png" alt="" />
+		      		<img class="ani text-img text-2" swiper-animate-effect="fadeInUp" swiper-animate-delay=".6s" src="img/page4/text-2.png" alt="" />
+		      		<img class="ani text-img text-3" swiper-animate-effect="fadeInUp" swiper-animate-delay="1.1s" src="img/page4/text-3.png" alt="" />
+	      			<img class="guangani ani" swiper-animate-effect="fadeInLeft" swiper-animate-delay="1.1s" src="img/page4/guang.png" alt="" />
+		      		<img class="ani text-img text-4" swiper-animate-effect="fadeInUp" swiper-animate-delay="2s" src="img/page4/text-4.png" alt="" />
+		      		<img class="kh" swiper-animate-effect="slideInUp" swiper-animate-delay="1.6s" src="img/page2/kh.png" alt="" />
+		      		<img class="dpx" src="img/page2/xg.png" alt="" />
+		    	</div>
+		    	<div class="swiper-slide page-5 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="title" src="img/page19/title.png" alt="" />
+		      		<div class="tabBox">
+		      			<img class="line" src="img/page18/line.png" alt="" />
+		      			<ul class="tabList">
+		      				<li onclick="gotoPage('5')">
+		      					<img src="img/page18/btn-bg.png" alt="" />
+		      					<img class="tab" src="img/page18/btn-1.png" alt="" />
+		      				</li>
+		      				<li onclick="gotoPage('11')">
+		      					<img src="img/page18/btn-bg.png" alt="" />
+		      					<img class="tab" src="img/page18/btn-2.png" alt="" />
+		      				</li>
+		      				<li onclick="gotoPage('17')" >
+		      					<img src="img/page18/btn-bg.png" alt="" />
+		      					<img class="tab" src="img/page18/btn-3.png" alt="" />
+		      				</li>
+		      			</ul>
+		      		</div>
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-6 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="expertTitle" src="img/page6/title.png" alt="" />
+		      		<ul class="expert expertActive">
+		      			<li><img src="img/page6/expert-1.png" alt="" /></li>
+		      			<li><img src="img/page6/expert-2.png" alt="" /></li>
+		      			<li><img src="img/page6/expert-3.png" alt="" /></li>
+		      			<li><img src="img/page6/expert-4.png" alt="" /></li>
+		      		</ul>
+		      		<img onclick="gotoPage('4')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-7 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="expertTitle" src="img/page6/title.png" alt="" />
+		      		<ul class="expert expertActive">
+		      			<li><img src="img/page7/expert-1.png" alt="" /></li>
+		      			<li><img src="img/page7/expert-2.png" alt="" /></li>
+		      			<li><img src="img/page7/expert-3.png" alt="" /></li>
+		      			<li><img src="img/page7/expert-4.png" alt="" /></li>
+		      		</ul>
+		      		<img onclick="gotoPage('4')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-8 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="expertTitle expertTitle1" src="img/page8/title.png" alt="" />
+		      		<ul class="expert expertActive">
+		      			<li><img src="img/page8/expert-1.png" alt="" /></li>
+		      			<li><img src="img/page8/expert-2.png" alt="" /></li>
+		      			<li><img src="img/page8/expert-3.png" alt="" /></li>
+		      		</ul>
+		      		<img class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-9 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="expertTitle expertTitle1" src="img/page8/title.png" alt="" />
+		      		<ul class="expert expertActive">
+		      			<li><img src="img/page9/expert-1.png" alt="" /></li>
+		      			<li><img src="img/page9/expert-2.png" alt="" /></li>
+		      			<li><img src="img/page9/expert-3.png" alt="" /></li>
+		      		</ul>
+		      		<img onclick="gotoPage('4')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-10 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="expertTitle expertTitle1" src="img/page10/title.png" alt="" />
+		      		<ul class="expert1 expertActive">
+		      			<li><img src="img/page10/expert-1.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-2.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-3.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-4.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-5.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-6.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-7.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-8.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-9.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-10.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-11.png" alt="" /></li>
+		      			<li><img src="img/page10/expert-12.png" alt="" /></li>
+		      		</ul>
+		      		<img onclick="gotoPage('4')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-11 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="expertTitle expertTitle1" src="img/page10/title.png" alt="" />
+		      		<ul class="expert1 expertActive">
+		      			<li><img src="img/page11/expert-1.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-2.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-3.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-4.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-5.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-6.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-7.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-8.png" alt="" /></li>
+		      			<li><img src="img/page11/expert-9.png" alt="" /></li>
+		      		</ul>
+		      		<img onclick="gotoPage('4')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+				<div class="swiper-slide page-13 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="title" src="img/page19/title.png" alt="" />
+		      		<ul class="tabLink2">
+		      			<li onclick="gotoPage('12')">
+		      				<img class="btn13" src="img/page13/btn-1.png" alt="" />
+		      				<img class="light" src="img/page13/light.png" alt="" />
+		      			</li>
+		      			<li onclick="gotoPage('13')">
+		      				<img class="btn13" src="img/page13/btn-2.png" alt="" />
+		      				<img class="light" src="img/page13/light.png" alt="" />
+		      			</li>
+		      			<li onclick="gotoPage('14')">
+		      				<img class="btn13" src="img/page13/btn-3.png" alt="" />
+		      				<img class="light" src="img/page13/light.png" alt="" />
+		      			</li>
+		      			<li onclick="gotoPage('15')">
+		      				<img class="btn13" src="img/page13/btn-4.png" alt="" />
+		      				<img class="light" src="img/page13/light.png" alt="" />
+		      			</li>
+		      		</ul>
+					<img onclick="gotoPage('4')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-14">
+		      		<img src="img/page14/head.png" alt="" />
+		      		<img src="img/page14/word-1.png" alt="" />
+		      		<img src="img/page14/word-2.png" alt="" />
+		      		<img src="img/page14/word-3.png" alt="" />
+		      		<img onclick="gotoPage('11')" class="return" src="img/page17/return.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-15 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="title" src="img/page19/title.png" alt="" />
+		      		<img class="title-hy" src="img/page15/title.png" alt="" />
+		      		<div class="wordBox">
+			      		<img src="img/page15/word-1.png" alt="" />
+			      		<img src="img/page15/word-2.png" alt="" />
+		      		</div>
+		      		<img onclick="gotoPage('11')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-16 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="title" src="img/page19/title.png" alt="" />
+		      		<img class="title-hy" src="img/page16/title.png" alt="" />
+		      		<div class="wordBox">
+			      		<img src="img/page16/word-1.png" alt="" />
+			      		<img src="img/page16/word-2.png" alt="" />
+		      		</div>
+		      		<img onclick="gotoPage('11')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-17 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="title" src="img/page19/title.png" alt="" />
+		      		<img class="title-hy" src="img/page17/title.png" alt="" />
+		      		<div class="wordBox">
+			      		<img src="img/page17/word-1.png" alt="" />
+			      		<img src="img/page17/word-2.png" alt="" />
+		      		</div>
+		      		<img onclick="gotoPage('11')" class="return" src="img/page17/return.png" alt="" />
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		      	<div class="swiper-slide page-19 page">
+		      		<div class="top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s">
+		      			<img class="left l-logo-1" src="img/page1/l-g-1.png" alt="" />
+		      			<img class="left l-logo-2" src="img/page1/l-g-2.png" alt="" />
+		      			<img class="right r-logo" src="img/page1/logo.png" alt="" />
+		      		</div>
+		      		<img class="title" src="img/page19/title.png" alt="" />
+		      		<img class="title-1" src="img/page19/title-1.png" alt="" />
+		      		<div class="map" id="dituContent"></div>
+		      		<img class="slogen" src="img/page19/slogen.png" alt="" />
+		      	</div>
+		    </div>
+		</div>
+		<audio preload="preload" id="player" autoplay="autoplay" src="img/audio_bg.mp3" loop></audio>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/animate.js"></script>
+		<script>
+			var Inter1 = null,
+			 	widthNow=0;
+			var swiper=null;
+			window.onload = function () {
+		        finishBar();
+		    }
+			//启动定时器
+		    function addBar() {
+		        if (widthNow == 99) {
+		            return false;
+		        }
+		        widthNow++;
+		        $('.percent-num').text(widthNow + "%");
+		        $('.icon-percent').width(widthNow + '%');
+		    }
+			//取消定时器
+		    function finishBar() {
+		        clearInterval(Inter1);
+		        $('.percent-num').text("100%");
+		        $('.icon-percent').width('100%');
+		        setTimeout(function(){
+		        	$(".loading-page").hide();//当页面加载完成后将loading页隐藏  
+					$("#music-stop").css('right','.5rem');
+	            	swiper= new Swiper('.swiper-container', {
+						loop:false,
+						initialSlide :0,
+						direction: 'vertical',
+						onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit,
+						console.log(swiper)
+						    swiperAnimateCache(swiper); //隐藏动画元素 
+						    swiperAnimate(swiper); //初始化完成开始动画
+						}, 
+						onSlideChangeEnd: function(res){
+							swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+						}
+					});
+		        },100)
+		    }
+			function gotoPage(e){
+				swiper.slideTo(e, 1, false);
+			}
+			function audioAutoPlay(id){  
+				var audio = document.getElementById(id),  
+					play = function(){  
+						audio.play();  
+						document.removeEventListener("touchstart",play, false);  
+					};  
+				audio.play();  
+				document.addEventListener("WeixinJSBridgeReady", function () {  
+					play();  
+				}, false);  
+				document.addEventListener('YixinJSBridgeReady', function() {  
+					play();  
+				}, false);  
+				document.addEventListener("touchstart",play, false);  
+			} 
+			
+			$(function(){
+				Inter1 = setInterval('addBar()', 100);
+				audioAutoPlay('player');
+				$("#music-stop").click(function(){
+					var audio1 = document.getElementById('player');
+					if(audio1!==null){ //判断是否获得
+						if(audio1.paused){ //获得播放状态,这个属性应该是是否是暂停状态,如果是就播放,如果不是暂停就暂停
+							audio1.play();
+							
+						}else{
+							audio1.pause();
+						}
+						$("#music-stop").toggleClass('stop');
+					}
+				})
+			});
+			
+		  </script>
+		  <script type="text/javascript">
+		    //创建和初始化地图函数：
+		    function initMap(){
+		        createMap();//创建地图
+		        setMapEvent();//设置地图事件
+		        addMapControl();//向地图添加控件
+		        addMarker();//向地图中添加marker
+		    }
+		    
+		    //创建地图函数：
+		    function createMap(){
+		        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+		        var point = new BMap.Point(121.506717,31.242176);//定义一个中心点坐标
+		        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+		        window.map = map;//将map变量存储在全局
+		    }
+		    
+		    //地图事件设置函数：
+		    function setMapEvent(){
+		        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+		        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+		        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+		        map.enableKeyboard();//启用键盘上下左右键移动地图
+		    }
+		    
+		    //地图控件添加函数：
+		    function addMapControl(){
+		        //向地图中添加缩放控件
+			var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+			map.addControl(ctrl_nav);
+		        //向地图中添加缩略图控件
+			var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+			map.addControl(ctrl_ove);
+		        //向地图中添加比例尺控件
+			var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+			map.addControl(ctrl_sca);
+		    }
+		    
+		    //标注点数组
+		    var markerArr = [{title:"香格里拉大酒店",content:"我的备注",point:"121.50677|31.242037",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+				 ];
+		    //创建marker
+		    function addMarker(){
+		        for(var i=0;i<markerArr.length;i++){
+		            var json = markerArr[i];
+		            var p0 = json.point.split("|")[0];
+		            var p1 = json.point.split("|")[1];
+		            var point = new BMap.Point(p0,p1);
+					var iconImg = createIcon(json.icon);
+		            var marker = new BMap.Marker(point,{icon:iconImg});
+					var iw = createInfoWindow(i);
+					var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+					marker.setLabel(label);
+		            map.addOverlay(marker);
+		            label.setStyle({
+		                        borderColor:"#808080",
+		                        color:"#333",
+		                        cursor:"pointer"
+		            });
+					
+					(function(){
+						var index = i;
+						var _iw = createInfoWindow(i);
+						var _marker = marker;
+						_marker.addEventListener("click",function(){
+						    this.openInfoWindow(_iw);
+					    });
+					    _iw.addEventListener("open",function(){
+						    _marker.getLabel().hide();
+					    })
+					    _iw.addEventListener("close",function(){
+						    _marker.getLabel().show();
+					    })
+						label.addEventListener("click",function(){
+						    _marker.openInfoWindow(_iw);
+					    })
+						if(!!json.isOpen){
+							label.hide();
+							_marker.openInfoWindow(_iw);
+						}
+					})()
+		        }
+		    }
+		    //创建InfoWindow
+		    function createInfoWindow(i){
+		        var json = markerArr[i];
+		        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+		        return iw;
+		    }
+		    //创建一个Icon
+		    function createIcon(json){
+		        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+		        return icon;
+		    }
+		    
+		    initMap();//创建和初始化地图
+		</script>
+	</body>
+</html>
